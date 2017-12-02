@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo "Enjoy infinite ponies in 5 seconds"
+echo -ne '####                     (5)\r'
+sleep 1
+echo -ne '########                 (4)\r'
+sleep 1
+echo -ne '############             (3)\r'
+sleep 1
+echo -ne '################         (2)\r'
+sleep 1
+echo -ne '####################     (1)\r'
+sleep 1
+echo -ne '######################## (0 !)\r'
+echo -ne '\n'
+while [ true ]; do
+ ponysay -q
+ sleep 0.75
+ clear
+done
